@@ -8,4 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\downloaderLibrary\downloaderLibrary.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Program.cs~" />
+  </ItemGroup>
 </Project>

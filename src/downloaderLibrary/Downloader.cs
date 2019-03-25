@@ -1,8 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using repoBaseLib;
+using System.Net;
 namespace downloaderLibrary
 {
+    public class DataCollector
+    {
+        public string Downloader(string url)
+        {
+            var client = new WebClient();
+            return client.DownloadString(url);
+        }
+    }
     public class DataHandler {
         public string Presenter(List<DataPacket> presenterData)
         {
@@ -27,14 +37,4 @@ namespace downloaderLibrary
         }
     }
 
-    public struct DataPacket {
-        public string name;
-        public string description;
-        public string launchString;
-        public string version;
-        public string versionCandidateName;
-        public DateTime releaseDate;
-        public string repoURL;
-        public string fileURL;
-    }
 }
