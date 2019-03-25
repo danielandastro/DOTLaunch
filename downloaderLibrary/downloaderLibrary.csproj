@@ -9,5 +9,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Class1.cs~" />
+    <None Remove="Downloader.cs~" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\repoBaseLib\repoBaseLib.csproj" />
   </ItemGroup>
 </Project>

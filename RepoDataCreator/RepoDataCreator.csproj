@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\downloaderLibrary\downloaderLibrary.csproj" />
+    <ProjectReference Include="..\repoBaseLib\repoBaseLib.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
